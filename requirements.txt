@@ -2,6 +2,7 @@ pyrofork>=2.3.63
 tgcrypto
 motor
 aiohttp
+pytz
 
 # For Web Deployable
 Flask
