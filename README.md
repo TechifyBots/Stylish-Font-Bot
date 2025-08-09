@@ -15,8 +15,20 @@
 - Fully Customizable Codebase
 - Stats & Broadcast feature available
 - Fsub & Log channel support
+- Maintenance Mode
 - Deploy To Koyeb + Heroku + Railway.
 - [Developer support](https://telegram.me/TechifySupport) 24x7
+</details>
+
+### 😍 COMMANDS
+
+<b><details><summary>Tap On Me For Commands</summary>
+```
+start - Check Bot Alive.
+stats - Check bot stats.
+maintenance - Toggle maintenance mode.
+broadcast - Broadcast Massage Send All Users In Bot.
+```
 </details>
 
 
@@ -28,6 +40,7 @@
 - `API_HASH` : Get From [Here](https://youtu.be/y5FwAobQ-Kc)
 - `BOT_TOKEN` : Get From [BotFather](https://youtu.be/aJILCCXfNVM)
 - `ADMIN` : Your Telegram User ID
+- `PICS` : Your bot start images (you can add multiple images)
 - `DB_URI` : MongoDB database get from [here](https://youtu.be/j8LIuM7vv18)
 - `LOG_CHANNEL` : Your Log channel ID.
 - `AUTH_CHANNELS` : Your FSUB channels ID.
