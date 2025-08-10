@@ -1,38 +1,33 @@
 class text(object):
-    START = """<b>{},
+    
+    START = """{},
 
-Welcome to Stylish Font Bot ✨ – Instantly convert any text into 40+ cool and fancy fonts!
+𝘞𝘦𝘭𝘤𝘰𝘮𝘦 𝘵𝘰 𝘚𝘵𝘺𝘭𝘪𝘴𝘩 𝘍𝘰𝘯𝘵 𝘉𝘰𝘵 ✨ – 𝘐𝘯𝘴𝘵𝘢𝘯𝘵𝘭𝘺 𝘤𝘰𝘯𝘷𝘦𝘳𝘵 𝘢𝘯𝘺 𝘵𝘦𝘹𝘵 𝘪𝘯𝘵𝘰 40+ 𝘤𝘰𝘰𝘭 𝘢𝘯𝘥 𝘧𝘢𝘯𝘤𝘺 𝘧𝘰𝘯𝘵𝘴!
 
-Just send any text in this chat, and I’ll give you a list of styled versions you can copy and use anywhere.
+𝘑𝘶𝘴𝘵 𝘴𝘦𝘯𝘥 𝘢𝘯𝘺 𝘵𝘦𝘹𝘵 𝘪𝘯 𝘵𝘩𝘪𝘴 𝘤𝘩𝘢𝘵, 𝘢𝘯𝘥 𝘐’𝘭𝘭 𝘨𝘪𝘷𝘦 𝘺𝘰𝘶 𝘢 𝘭𝘪𝘴𝘵 𝘰𝘧 𝘴𝘵𝘺𝘭𝘦𝘥 𝘷𝘦𝘳𝘴𝘪𝘰𝘯𝘴 𝘺𝘰𝘶 𝘤𝘢𝘯 𝘤𝘰𝘱𝘺 𝘢𝘯𝘥 𝘶𝘴𝘦 𝘢𝘯𝘺𝘸𝘩𝘦𝘳𝘦.
 
-<blockquote>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://telegram.me/TechifyRahul'>ʀᴀʜᴜʟ</a></blockquote></b>"""
+<blockquote><b>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://telegram.me/TechifyRahul'>ʀᴀʜᴜʟ</a></b></blockquote>"""
+    
+    LOG = """👁️‍🗨️ 𝘜𝘚𝘌𝘙 𝘋𝘌𝘛𝘈𝘐𝘓𝘚
 
-    FORCE_SUBSCRIBE = """<b>{},
+○ 𝘐𝘋 : <code>{}</code>
+○ 𝘋𝘊 : {}
+○ 𝘍𝘪𝘳𝘴𝘵 𝘕𝘢𝘮𝘦 : {}
+○ 𝘜𝘴𝘦𝘳𝘕𝘢𝘮𝘦 : {}
 
-To use the bot, you must join our channel first. The bot will not process any requests without joining.
+𝘉𝘺 = @{}"""
+    
+    ABOUT = """<b>‣ ᴍʏ ɴᴀᴍᴇ : <a href='https://youtube.com/@techifybots'>sᴛʏʟɪsʜ ꜰᴏɴᴛ ʙᴏᴛ</a>
+‣ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a> 
+‣ ᴅᴀᴛᴀʙᴀsᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏᴅʙ</a>
+‣ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 𝟹</a> 
+‣ ʙᴏᴛ sᴇʀᴠᴇʀ : <a href='https://www.koyeb.com/'>ᴋᴏʏᴇʙ</a>
+‣ ᴄʀᴇᴀᴛᴇᴅ ʙʏ : <a href='https://telegram.me/callownerbot'>ʀᴀʜᴜʟ</a></b>"""
 
-बॉट का उपयोग करने के लिए आपको पहले हमारे चैनल में Join होना होगा। बॉट बिना शामिल हुए किसी भी Request को Process नहीं करेगा।</b>"""
+    HELP = """✨ 𝘏𝘰𝘸 𝘛𝘰 𝘜𝘴𝘦:
 
-    LOG = """#New_User
+1. 𝘑𝘶𝘴𝘵 𝘴𝘦𝘯𝘥 𝘢𝘯𝘺 𝘵𝘦𝘹𝘵 𝘪𝘯 𝘵𝘩𝘦 𝘱𝘳𝘪𝘷𝘢𝘵𝘦 𝘤𝘩𝘢𝘵.
+2. 𝘠𝘰𝘶’𝘭𝘭 𝘪𝘯𝘴𝘵𝘢𝘯𝘵𝘭𝘺 𝘨𝘦𝘵 40+ 𝘴𝘵𝘺𝘭𝘪𝘴𝘩 𝘧𝘰𝘯𝘵 𝘷𝘦𝘳𝘴𝘪𝘰𝘯𝘴.
+3. 𝘛𝘢𝘱 𝘵𝘰 𝘤𝘰𝘱𝘺 𝘺𝘰𝘶𝘳 𝘧𝘢𝘷𝘰𝘳𝘪𝘵𝘦 𝘢𝘯𝘥 𝘶𝘴𝘦 𝘪𝘵 𝘢𝘯𝘺𝘸𝘩𝘦𝘳𝘦 – 𝘐𝘯𝘴𝘵𝘢𝘨𝘳𝘢𝘮, 𝘞𝘩𝘢𝘵𝘴𝘈𝘱𝘱, 𝘣𝘪𝘰𝘴, 𝘦𝘵𝘤.
 
-User: {}
-ID: {}"""
-
-    ABOUT = """<b>📜 Aʙᴏᴜᴛ Tʜɪs Bᴏᴛ:
-  
-Lɪʙʀᴀʀʏ: Pʏʀᴏɢʀᴀᴍ 📚  
-Lᴀɴɢᴜᴀɢᴇ: Pʏᴛʜᴏɴ 🐍  
-Fᴜɴᴄᴛɪᴏɴ: Tᴇxᴛ ➜ Sᴛʏʟɪsʜ Fᴏɴᴛs 🎨  
-Sᴇʀᴠᴇʀ: Rᴇɴᴅᴇʀ 🌐  
-Vᴇʀsɪᴏɴ: V1.0 🚀  
-Sᴏᴜʀᴄᴇ: Aᴠᴀɪʟᴀʙʟᴇ (Fʀᴇᴇ) 💻  
-
-<blockquote>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://telegram.me/TechifyRahul'>ʀᴀʜᴜʟ</a></blockquote></b>"""
-
-    HELP = """<b>✨ Hᴏᴡ ᴛᴏ Usᴇ:
-
-1. Just send any text in the private chat.
-2. You’ll instantly get 40+ stylish font versions.
-3. Tap to copy your favorite and use it anywhere – Instagram, WhatsApp, bios, etc.
-
-⚠️ This bot works only in private chat.</b>"""
+⚠️ 𝘛𝘩𝘪𝘴 𝘣𝘰𝘵 𝘸𝘰𝘳𝘬𝘴 𝘰𝘯𝘭𝘺 𝘪𝘯 𝘱𝘳𝘪𝘷𝘢𝘵𝘦 𝘤𝘩𝘢𝘵."""
