@@ -50,6 +50,7 @@ FONT_STYLES = [
 @Client.on_message(filters.text & filters.private & ~filters.command(["start", "stats", "broadcast"]))
 async def send_styled_fonts(client: Client, message: Message):
     if await get_maintenance() and message.from_user.id != ADMIN:
+        await message.delete()
         return await message.reply_text("**🛠️ Bot is Under Maintenance**", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Support", user_id=int(ADMIN))]]))
     user_text = message.text
     for font_func in FONT_STYLES:
