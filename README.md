@@ -51,7 +51,7 @@ broadcast - Broadcast Massage Send All Users In Bot.
 
 ### 😇 [SUPPORT](https://techifybots.github.io/PayWeb)
 
-### 🥳 [DEVELOPER](https://instagram.com/TechifyRahul)
+### 🥳 [DEVELOPER](https://instagram.com/ImRahulDhankhar)
 
 ### 📌 NOTE
 
