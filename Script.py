@@ -6,7 +6,7 @@ class text(object):
 
 𝘑𝘶𝘴𝘵 𝘴𝘦𝘯𝘥 𝘢𝘯𝘺 𝘵𝘦𝘹𝘵 𝘪𝘯 𝘵𝘩𝘪𝘴 𝘤𝘩𝘢𝘵, 𝘢𝘯𝘥 𝘐’𝘭𝘭 𝘨𝘪𝘷𝘦 𝘺𝘰𝘶 𝘢 𝘭𝘪𝘴𝘵 𝘰𝘧 𝘴𝘵𝘺𝘭𝘦𝘥 𝘷𝘦𝘳𝘴𝘪𝘰𝘯𝘴 𝘺𝘰𝘶 𝘤𝘢𝘯 𝘤𝘰𝘱𝘺 𝘢𝘯𝘥 𝘶𝘴𝘦 𝘢𝘯𝘺𝘸𝘩𝘦𝘳𝘦.
 
-<blockquote><b>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://telegram.me/TechifyRahul'>ʀᴀʜᴜʟ</a></b></blockquote>"""
+<blockquote><b>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://telegram.me/TechifyBots'>ʀᴀʜᴜʟ</a></b></blockquote>"""
     
     LOG = """👁️‍🗨️ 𝘜𝘚𝘌𝘙 𝘋𝘌𝘛𝘈𝘐𝘓𝘚
 
