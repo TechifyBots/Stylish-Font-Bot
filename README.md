@@ -14,8 +14,9 @@
 - One-Tap Copy Support
 - Fully Customizable Codebase
 - Stats & Broadcast feature available
-- Fsub & Log channel support
+- Multi Fsub & Log channel support
 - Maintenance Mode
+- Ban & Unban Feature
 - Deploy To Koyeb + Heroku + Railway.
 - [Developer support](https://telegram.me/TechifySupport) 24x7
 </details>
@@ -26,6 +27,9 @@
 ```
 start - Check Bot Alive.
 stats - Check bot stats.
+ban - to ban a user.
+unban - to unban a banned user.
+banned - to check banned users.
 maintenance - Toggle maintenance mode.
 broadcast - Broadcast Massage Send All Users In Bot.
 ```
@@ -38,12 +42,15 @@ broadcast - Broadcast Massage Send All Users In Bot.
 
 - `API_ID` : Get From [Here](https://youtu.be/y5FwAobQ-Kc)
 - `API_HASH` : Get From [Here](https://youtu.be/y5FwAobQ-Kc)
-- `BOT_TOKEN` : Get From [BotFather](https://youtu.be/aJILCCXfNVM)
-- `ADMIN` : Your Telegram User ID
-- `PICS` : Your bot start images (you can add multiple images)
-- `DB_URI` : MongoDB database get from [here](https://youtu.be/j8LIuM7vv18)
-- `LOG_CHANNEL` : Your Log channel ID.
-- `AUTH_CHANNELS` : Your FSUB channels ID.
+- `BOT_TOKEN` : Get From [BotFather](https://youtu.be/rUEKDOSPFho)
+- `DB_URI` : Mongodb [Database](https://youtu.be/j8LIuM7vv18)
+- `ADMIN` : Your Telegram ID.
+- `PICS` - Your bot start images (you can add multiple images)
+- `LOG_CHANNEL` : Log Channel ID.
+- `IS_FSUB` : True/False FSUB accordingly.
+- `FSUB_EXPIRE` : Your FSUB link expire time.
+- `AUTH_CHANNELS` : Your Public & Private FSUB channels IDs.
+- `AUTH_REQ_CHANNELS` : Your Private Request FSUB channels IDs.
 </details>
 
 ### 💞 CREDIT
@@ -52,6 +59,8 @@ broadcast - Broadcast Massage Send All Users In Bot.
 ### 😇 [SUPPORT](https://techifybots.github.io/PayWeb)
 
 ### 🥳 [DEVELOPER](https://instagram.com/ImRahulDhankhar)
+
+### 🚀 [DEPLOYMENT GUIDE](https://www.youtube.com/playlist?list=PLQrMSile4s5UnIEvWyKM1MKFuNg8Wfh2S)
 
 ### 📌 NOTE
 
