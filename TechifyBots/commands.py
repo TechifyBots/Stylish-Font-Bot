@@ -202,21 +202,24 @@ async def broadcasting_func(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎭 Close", callback_data="close")]]),
         )
 
-@Client.on_message(filters.text & filters.private & ~filters.regex(r"^/"))
+@Client.on_message(filters.text & filters.private &  ~filters.regex(r"^/"))
 async def send_styled_fonts(client: Client, message: Message):
     if await tb.get_user(message.from_user.id) is None:
         await tb.add_user(message.from_user.id, message.from_user.first_name)
         bot = await client.get_me()
-        await client.send_message(
-            LOG_CHANNEL,
-            text.LOG.format(
-                message.from_user.id,
-                getattr(message.from_user, "dc_id", "N/A"),
-                message.from_user.first_name or "N/A",
-                f"@{message.from_user.username}" if message.from_user.username else "N/A",
-                bot.username
+        try:
+            await client.send_message(
+                LOG_CHANNEL,
+                text.LOG.format(
+                    message.from_user.id,
+                    getattr(message.from_user, "dc_id", "N/A"),
+                    message.from_user.first_name or "N/A",
+                    f"@{message.from_user.username}" if message.from_user.username else "N/A",
+                    bot.username
+                )
             )
-        )
+        except:
+            pass
     user_text = message.text
     for font_func in FONT_STYLES:
         try:
