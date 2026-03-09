@@ -1,14 +1,57 @@
 import random
 import re
 import asyncio
+from asyncio import sleep
+from .fonts import Fonts
 from collections import defaultdict
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, UserIsBlocked, PeerIdInvalid, InputUserDeactivated
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 from config import *
 from Script import text
-from .db import tb
-from .fsub import get_fsub
+from .database import tb
+
+FONT_STYLES = [
+    Fonts.typewriter,
+    Fonts.outline,
+    Fonts.serif,
+    Fonts.bold_cool,
+    Fonts.cool,
+    Fonts.smallcap,
+    Fonts.script,
+    Fonts.bold_script,
+    Fonts.tiny,
+    Fonts.comic,
+    Fonts.sans,
+    Fonts.slant_san,
+    Fonts.slant,
+    Fonts.sim,
+    Fonts.circles,
+    Fonts.dark_circle,
+    Fonts.gothic,
+    Fonts.bold_gothic,
+    Fonts.cloud,
+    Fonts.happy,
+    Fonts.sad,
+    Fonts.special,
+    Fonts.square,
+    Fonts.dark_square,
+    Fonts.andalucia,
+    Fonts.manga,
+    Fonts.stinky,
+    Fonts.bubbles,
+    Fonts.underline,
+    Fonts.ladybug,
+    Fonts.rays,
+    Fonts.birds,
+    Fonts.slash,
+    Fonts.stop,
+    Fonts.skyline,
+    Fonts.arrows,
+    Fonts.rvnes,
+    Fonts.strike,
+    Fonts.frozen,
+]
 
 @Client.on_message(filters.command("start"))
 async def start_cmd(client, message):
@@ -25,14 +68,13 @@ async def start_cmd(client, message):
                 bot.username
             )
         )
-    if IS_FSUB and not await get_fsub(client, message):return
     await message.reply_photo(
         photo=random.choice(PICS),
         caption=text.START.format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton("ℹ️ 𝖠𝖻𝗈𝗎𝗍", callback_data="about"),
              InlineKeyboardButton("📚 𝖧𝖾𝗅𝗉", callback_data="help")],
-            [InlineKeyboardButton("👨‍💻 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋 👨‍💻", user_id=int(ADMIN))]
+            [InlineKeyboardButton("💬 𝖥𝖾𝖾𝖽𝖻𝖺𝖼𝗄 💬", url="https://telegram.me/TechifySupport")]
         ])
     )
 
@@ -158,4 +200,32 @@ async def broadcasting_func(client: Client, message: Message):
         f"❌ Failed/Removed: <code>{failed}</code>\n"
         f"📊 Active Users (Now): <code>{active_users}</code>",
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎭 Close", callback_data="close")]]),
-    )
+        )
+
+@Client.on_message(filters.text & filters.private & ~filters.regex(r"^/"))
+async def send_styled_fonts(client: Client, message: Message):
+    if await tb.get_user(message.from_user.id) is None:
+        await tb.add_user(message.from_user.id, message.from_user.first_name)
+        bot = await client.get_me()
+        await client.send_message(
+            LOG_CHANNEL,
+            text.LOG.format(
+                message.from_user.id,
+                getattr(message.from_user, "dc_id", "N/A"),
+                message.from_user.first_name or "N/A",
+                f"@{message.from_user.username}" if message.from_user.username else "N/A",
+                bot.username
+            )
+        )
+    user_text = message.text
+    for font_func in FONT_STYLES:
+        try:
+            styled_text = font_func(user_text)
+            await client.send_message(
+                chat_id=message.chat.id,
+                text=styled_text,
+                parse_mode=None
+            )
+            await sleep(0.2)
+        except Exception as e:
+            print(f"Error with {font_func.__name__}: {e}")
