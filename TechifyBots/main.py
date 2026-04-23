@@ -2,8 +2,6 @@ from asyncio import sleep
 from .fonts import Fonts
 from pyrogram import Client, filters
 from pyrogram.types import *
-from .maintenance import get_maintenance
-from config import ADMIN
 
 FONT_STYLES = [
     Fonts.typewriter,
@@ -49,9 +47,6 @@ FONT_STYLES = [
 
 @Client.on_message(filters.text & filters.private & ~filters.command(["start", "stats", "broadcast"]))
 async def send_styled_fonts(client: Client, message: Message):
-    if await get_maintenance() and message.from_user.id != ADMIN:
-        await message.delete()
-        return await message.reply_text(f"<b>{message.from_user.mention},\n\nᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴄᴜʀʀᴇɴᴛʟʏ ᴜɴᴅᴇʀ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ.\n\n<blockquote>ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ ꜰᴏʀ ᴍᴏʀᴇ ɪɴꜰᴏ.</blockquote></b>", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("👨‍💻 ᴏᴡɴᴇʀ 👨‍💻", user_id=int(ADMIN))]]))
     user_text = message.text
     for font_func in FONT_STYLES:
         try:
