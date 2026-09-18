@@ -7,7 +7,7 @@ from collections import defaultdict
 from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait, UserIsBlocked, PeerIdInvalid, InputUserDeactivated
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
-from config import *
+from config import LOG_CHANNEL, ADMIN, PICS
 from Script import text
 from .database import tb
 
