@@ -39,9 +39,23 @@ async def callback_query_handler(client, query: CallbackQuery):
                 caption=text.ABOUT
             ),
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton('💻 𝖱𝖾𝗉𝗈',url='https://github.com/TechifyBots/Stylish-Font-Bot'),
-                 InlineKeyboardButton('👨‍💻 𝖮𝗐𝗇𝖾𝗋',user_id=int(ADMIN))],
-                [InlineKeyboardButton("↩️ 𝖡𝖺𝖼𝗄",callback_data="start", style=enums.ButtonStyle.PRIMARY)]
+                [InlineKeyboardButton('📂 𝖲𝗈𝗎𝗋𝖼𝖾 𝖢𝗈𝖽𝖾',url='https://github.com/TechifyBots/Stylish-Font-Bot')],
+                [InlineKeyboardButton('☕ 𝖣𝗈𝗇𝖺𝗍𝖾', callback_data='donate'),
+                 InlineKeyboardButton('👨‍💻 𝖢𝗋𝖾𝖺𝗍𝗈𝗋', user_id=int(ADMIN))],
+                [InlineKeyboardButton('↩️ 𝖡𝖺𝖼𝗄', callback_data='start', style=enums.ButtonStyle.PRIMARY)]
+            ])
+        )
+
+    elif query.data == "donate":
+        await query.message.edit_media(
+            InputMediaPhoto(
+                media=random.choice(PICS),
+                caption=text.DONATE
+            ),
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton('💳 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖳𝗁𝖾 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋', web_app=WebAppInfo(url='https://techifybots.vercel.app/pay'))],
+                [InlineKeyboardButton('↩️ 𝖡𝖺𝖼𝗄', callback_data='about', style=enums.ButtonStyle.PRIMARY),
+                 InlineKeyboardButton('❌ 𝖢𝗅𝗈𝗌𝖾', callback_data='close', style=enums.ButtonStyle.DANGER)]
             ])
         )
 
