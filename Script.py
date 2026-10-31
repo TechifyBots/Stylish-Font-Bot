@@ -6,7 +6,7 @@ class text(object):
 
 𝖩𝗎𝗌𝗍 𝗌𝖾𝗇𝖽 𝖺𝗇𝗒 𝗍𝖾𝗑𝗍 𝗂𝗇 𝗍𝗁𝗂𝗌 𝖼𝗁𝖺𝗍, 𝖺𝗇𝖽 𝖨’𝗅𝗅 𝗀𝗂𝗏𝖾 𝗒𝗈𝗎 𝖺 𝗅𝗂𝗌𝗍 𝗈𝖿 𝗌𝗍𝗒𝗅𝖾𝖽 𝗏𝖾𝗋𝗌𝗂𝗈𝗇𝗌 𝗒𝗈𝗎 𝖼𝖺𝗇 𝖼𝗈𝗉𝗒 𝖺𝗇𝖽 𝗎𝗌𝖾 𝖺𝗇𝗒𝗐𝗁𝖾𝗋𝖾.
 
-<b><blockquote>‣ 𝖬𝖺𝗂𝗇𝗍𝖺𝗂𝗇𝖾𝖽 𝖡𝗒: <a href='https://techifybots.vercel.app'>𝖱𝖺𝗁𝗎𝗅</a></blockquote></b>"""
+<b><blockquote>‣ 𝖬𝖺𝗂𝗇𝗍𝖺𝗂𝗇𝖾𝖽 𝖡𝗒: <a href='https://rahuldhankhar.vercel.app/'>𝖱𝖺𝗁𝗎𝗅</a></blockquote></b>"""
     
     LOG = """<blockquote>👁️‍🗨️ 𝗨𝘀𝗲𝗿 𝗗𝗲𝘁𝗮𝗶𝗹𝘀</blockquote>
 
@@ -25,7 +25,9 @@ class text(object):
 <b>‣ 𝖣𝖺𝗍𝖺𝖻𝖺𝗌𝖾 :</b> <a href='https://www.mongodb.com/'>𝖬𝗈𝗇𝗀𝗈𝖣𝖡</a>
 <b>‣ 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾 :</b> <a href='https://www.python.org/download/releases/3.0/'>𝖯𝗒𝗍𝗁𝗈𝗇 𝟥</a>
 <b>‣ 𝖡𝗈𝗍 𝖲𝖾𝗋𝗏𝖾𝗋 :</b> <a href='https://www.koyeb.com/'>𝖪𝗈𝗒𝖾𝖻</a>
-<b>‣ 𝖢𝗋𝖾𝖺𝗍𝖾𝖽 𝖡𝗒 :</b> <a href='https://telegram.me/callownerbot'>𝖱𝖺𝗁𝗎𝗅</a>"""
+<b>‣ 𝖢𝗋𝖾𝖺𝗍𝖾𝖽 𝖡𝗒 :</b> <a href='https://techifybots.vercel.app/'>𝖳𝖾𝖼𝗁𝗂𝖿𝗒 𝖡𝗈𝗍𝗌</a>
+
+🌟 𝘛𝘩𝘢𝘯𝘬𝘴 𝘧𝘰𝘳 𝘶𝘴𝘪𝘯𝘨 𝘵𝘩𝘦 𝘣𝘰𝘵!"""
 
     GUIDE = """<blockquote>❓ 𝗛𝗮𝘃𝗶𝗻𝗴 𝗧𝗿𝗼𝘂𝗯𝗹𝗲?</blockquote>
 
