@@ -2,7 +2,6 @@ import random
 import re
 import asyncio
 from asyncio import sleep
-from .fonts import Fonts
 from collections import defaultdict
 from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait, UserIsBlocked, PeerIdInvalid, InputUserDeactivated
@@ -10,48 +9,6 @@ from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 from config import LOG_CHANNEL, ADMIN, PICS
 from Script import text
 from .database import tb
-
-FONT_STYLES = [
-    Fonts.typewriter,
-    Fonts.outline,
-    Fonts.serif,
-    Fonts.bold_cool,
-    Fonts.cool,
-    Fonts.smallcap,
-    Fonts.script,
-    Fonts.bold_script,
-    Fonts.tiny,
-    Fonts.comic,
-    Fonts.sans,
-    Fonts.slant_san,
-    Fonts.slant,
-    Fonts.sim,
-    Fonts.circles,
-    Fonts.dark_circle,
-    Fonts.gothic,
-    Fonts.bold_gothic,
-    Fonts.cloud,
-    Fonts.happy,
-    Fonts.sad,
-    Fonts.special,
-    Fonts.square,
-    Fonts.dark_square,
-    Fonts.andalucia,
-    Fonts.manga,
-    Fonts.stinky,
-    Fonts.bubbles,
-    Fonts.underline,
-    Fonts.ladybug,
-    Fonts.rays,
-    Fonts.birds,
-    Fonts.slash,
-    Fonts.stop,
-    Fonts.skyline,
-    Fonts.arrows,
-    Fonts.rvnes,
-    Fonts.strike,
-    Fonts.frozen,
-]
 
 @Client.on_message(filters.command("start") & filters.private)
 async def start_cmd(client, message):
@@ -74,21 +31,9 @@ async def start_cmd(client, message):
         reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton("ℹ️ 𝖠𝖻𝗈𝗎𝗍", callback_data="about"),
              InlineKeyboardButton("📚 𝖧𝖾𝗅𝗉", callback_data="help")],
-            [InlineKeyboardButton("💬 𝖥𝖾𝖾𝖽𝖻𝖺𝖼𝗄 💬", url="https://telegram.me/TechifySupport", style=enums.ButtonStyle.PRIMARY)]
+            [InlineKeyboardButton("🤖 𝖬𝗈𝗋𝖾 𝖡𝗈𝗍𝗌 🤖", url="https://telegram.me/TechifyBots/8", style=enums.ButtonStyle.PRIMARY)]
         ])
     )
-
-@Client.on_message(filters.command("help") & filters.private)
-async def help_cmd(client, message):
-    msg = await message.reply(text.GUIDE,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎬 𝖶𝖺𝗍𝖼𝗁 𝖳𝗎𝗍𝗈𝗋𝗂𝖺𝗅", url="https://youtu.be/ZXpdkdiFsAs", style=enums.ButtonStyle.PRIMARY)]])
-    )
-    await asyncio.sleep(300)
-    try:
-        await msg.delete()
-        await message.delete()
-    except Exception:
-        pass
 
 def parse_button_markup(text: str):
     lines = text.split("\n")
@@ -110,16 +55,6 @@ def parse_button_markup(text: str):
         else:
             final_text_lines.append(line)
     return InlineKeyboardMarkup(buttons) if buttons else None, "\n".join(final_text_lines).strip()
-
-@Client.on_message(filters.command("stats") & filters.private & filters.user(ADMIN))
-async def total_users(client: Client, message: Message):
-    try:
-        users = await tb.get_all_users()
-        await message.reply_text(f"👥 **Total Users:** {len(users)}",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎭 𝖢𝗅𝗈𝗌𝖾", callback_data="close", style=enums.ButtonStyle.DANGER)]]))
-    except Exception as e:
-        r=await message.reply(f"❌ *Error:* `{str(e)}`")
-        await asyncio.sleep(30)
-        await r.delete()
 
 @Client.on_message(filters.command("broadcast") & filters.private & filters.user(ADMIN))
 async def broadcasting_func(client: Client, message: Message):
@@ -212,35 +147,4 @@ async def broadcasting_func(client: Client, message: Message):
         f"❌ Failed/Removed: <code>{failed}</code>\n"
         f"📊 Active Users (Now): <code>{active_users}</code>",
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎭 𝖢𝗅𝗈𝗌𝖾", callback_data="close", style=enums.ButtonStyle.DANGER)]]),
-        )
-
-@Client.on_message(filters.text & filters.private & ~filters.regex(r"^/"))
-async def send_styled_fonts(client: Client, message: Message):
-    if await tb.get_user(message.from_user.id) is None:
-        await tb.add_user(message.from_user.id, message.from_user.first_name)
-        bot = await client.get_me()
-        try:
-            await client.send_message(
-                LOG_CHANNEL,
-                text.LOG.format(
-                    message.from_user.id,
-                    getattr(message.from_user, "dc_id", "N/A"),
-                    message.from_user.first_name or "N/A",
-                    f"@{message.from_user.username}" if message.from_user.username else "N/A",
-                    bot.username
-                )
-            )
-        except:
-            pass
-    user_text = message.text
-    for font_func in FONT_STYLES:
-        try:
-            styled_text = font_func(user_text)
-            await client.send_message(
-                chat_id=message.chat.id,
-                text=styled_text,
-                parse_mode=None
-            )
-            await sleep(0.2)
-        except Exception as e:
-            print(f"Error with {font_func.__name__}: {e}")
+    )
