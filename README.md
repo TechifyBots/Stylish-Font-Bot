@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://bannerrender.vercel.app/api?type=waving&height=300&color=gradient&text=𝗦𝘁𝘆𝗹𝗶𝘀𝗵%20𝗙𝗼𝗻𝘁%20𝗕𝗼𝘁&fontAlignY=35&fontSize=80&desc=𝗪𝗵𝗲𝗿𝗲%20𝗪𝗼𝗿𝗱𝘀%20𝗙𝗶𝗻𝗱%20𝗧𝗵𝗲𝗶𝗿%20𝗦𝘁𝘆𝗹𝗲&descAlignY=60"/>
+<img src="https://bannerrender.vercel.app/api?type=waving&height=300&color=gradient&text=𝗙𝗮𝗻𝗰𝘆%20𝗙𝗼𝗻𝘁%20𝗕𝗼𝘁&fontAlignY=35&fontSize=80&desc=𝗪𝗵𝗲𝗿𝗲%20𝗪𝗼𝗿𝗱𝘀%20𝗙𝗶𝗻𝗱%20𝗧𝗵𝗲𝗶𝗿%20𝗦𝘁𝘆𝗹𝗲&descAlignY=60"/>
 
 <p align="center">
 
@@ -10,12 +10,12 @@ A **modern, open-source, and developer-friendly** Telegram bot built to **transf
 </p>
 
 
-[![Last Commit](https://img.shields.io/github/last-commit/TechifyBots/Stylish-Font-Bot?style=for-the-badge)](https://github.com/TechifyBots/Stylish-Font-Bot/commits)
+[![Last Commit](https://img.shields.io/github/last-commit/TechifyBots/Fancy-Font-Bot?style=for-the-badge)](https://github.com/TechifyBots/Fancy-Font-Bot/commits)
 <br>
-[![GitHub Stars](https://img.shields.io/github/stars/TechifyBots/Stylish-Font-Bot?style=for-the-badge)](https://github.com/TechifyBots)
-[![GitHub Forks](https://img.shields.io/github/forks/TechifyBots/Stylish-Font-Bot?style=for-the-badge)](https://github.com/TechifyBots/Stylish-Font-Bot/fork)
+[![GitHub Stars](https://img.shields.io/github/stars/TechifyBots/Fancy-Font-Bot?style=for-the-badge)](https://github.com/TechifyBots)
+[![GitHub Forks](https://img.shields.io/github/forks/TechifyBots/Fancy-Font-Bot?style=for-the-badge)](https://github.com/TechifyBots/Fancy-Font-Bot/fork)
 <br>
-[![Repo Size](https://img.shields.io/github/languages/code-size/TechifyBots/Stylish-Font-Bot?style=for-the-badge&color=8B5CF6)](https://github.com/TechifyBots/Stylish-Font-Bot)
+[![Repo Size](https://img.shields.io/github/languages/code-size/TechifyBots/Fancy-Font-Bot?style=for-the-badge&color=8B5CF6)](https://github.com/TechifyBots/Fancy-Font-Bot)
 
 </div>
 
@@ -40,7 +40,7 @@ A **modern, open-source, and developer-friendly** Telegram bot built to **transf
 
 ## 🌸 Overview
 
-**Stylish Font Bot** is a creative Telegram bot that transforms **normal text into stylish and decorative fonts** in seconds. With a wide collection of text styles and an easy-to-use interface, it helps you make your messages, bios, captions, and posts more **unique and eye-catching**.
+**Fancy Font Bot** is a creative Telegram bot that transforms **normal text into stylish and decorative fonts** in seconds. With a wide collection of text styles and an easy-to-use interface, it helps you make your messages, bios, captions, and posts more **unique and eye-catching**.
 
 >*💡 Give your words a fresh look and make every message stand out.*
 
@@ -62,7 +62,7 @@ A **modern, open-source, and developer-friendly** Telegram bot built to **transf
 
 ## ✨ Features
 
-- ✨ **40+ Stylish Fonts** — Transform normal text into a wide variety of creative font styles.
+- ✨ **55+ Stylish Fonts** — Transform normal text into a wide variety of creative font styles.
 - ⚡ **Instant Conversion** — Generate stylish text quickly with a simple Telegram workflow.
 - 📋 **One-Tap Copy** — Easily copy your favorite styled text for use anywhere.
 - 🎨 **Multiple Text Styles** — Choose different designs to match your messages, bios, captions, and posts.
@@ -121,8 +121,7 @@ Watch this short video to understand **what the bot is**, **why it's useful**, *
 
 ```
 start - Check Bot Alive.
-stats - Check bot stats.
-help - Bot usage guide.
+font - Change text font
 ban - to ban a user.
 unban - to unban a user.
 banned - to check banned users.
@@ -150,10 +149,10 @@ Need help deploying this project? We've got you covered.
 | 🐞 **Report Bugs** | 💡 **Suggest Features** | 🚀 **Submit PRs** |
 |:------------------:|:-----------------------:|:-----------------:|
 | Found an issue? | Have an idea? | Ready to contribute? |
-| **[Open Issue](https://github.com/TechifyBots/Stylish-Font-Bot/issues)** | **[Open Discussion](https://github.com/TechifyBots/Stylish-Font-Bot/issues)** | **[Fork & Submit](https://github.com/TechifyBots/Stylish-Font-Bot/fork)** |
+| **[Open Issue](https://github.com/TechifyBots/Fancy-Font-Bot/issues)** | **[Open Discussion](https://github.com/TechifyBots/Fancy-Font-Bot/issues)** | **[Fork & Submit](https://github.com/TechifyBots/Fancy-Font-Bot/fork)** |
 
 > [!IMPORTANT]
-> *Before opening an issue, please ensure you're using the **[latest version](https://github.com/TechifyBots/Stylish-Font-Bot)** and have followed the **[deployment guide](https://www.youtube.com/playlist?list=PLQrMSile4s5UnIEvWyKM1MKFuNg8Wfh2S)**.*
+> *Before opening an issue, please ensure you're using the **[latest version](https://github.com/TechifyBots/Fancy-Font-Bot)** and have followed the **[deployment guide](https://www.youtube.com/playlist?list=PLQrMSile4s5UnIEvWyKM1MKFuNg8Wfh2S)**.*
 
 ---
 
