@@ -16,6 +16,8 @@ A **modern, open-source, and developer-friendly** Telegram bot built to **transf
 [![GitHub Forks](https://img.shields.io/github/forks/TechifyBots/Fancy-Font-Bot?style=for-the-badge)](https://github.com/TechifyBots/Fancy-Font-Bot/fork)
 <br>
 [![Repo Size](https://img.shields.io/github/languages/code-size/TechifyBots/Fancy-Font-Bot?style=for-the-badge&color=8B5CF6)](https://github.com/TechifyBots/Fancy-Font-Bot)
+<br>
+[![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://telegram.me/FancyFontBot)
 
 </div>
 
