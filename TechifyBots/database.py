@@ -56,6 +56,24 @@ class Techifybots:
             print("Error in get_all_users:", e)
             return []
 
+    async def record_font_change(self) -> None:
+        try:
+            await db["stats"].update_one(
+                {"_id": "font_changes"},
+                {"$inc": {"total": 1}},
+                upsert=True
+            )
+        except Exception as e:
+            print("Error in record_font_change:", e)
+
+    async def get_font_changes(self) -> int:
+        try:
+            stats = await db["stats"].find_one({"_id": "font_changes"})
+            return stats.get("total", 0) if stats else 0
+        except Exception as e:
+            print("Error in get_font_changes:", e)
+            return 0
+
     async def delete_user(self, identifier: int | str | ObjectId) -> bool:
         try:
             query = {}
